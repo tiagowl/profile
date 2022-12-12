@@ -65,6 +65,39 @@ body{
     height: 2.5rem;
 }
 
+.is-loading .skeleton-profile-img, 
+                .skeleton-profile-name,
+                .skeleton-nick,
+                .skeleton-img,
+                .skeleton-description{
+                    background: #6b6a67;
+                    background: linear-gradient(110deg, #6b6a67 8%, #8d8b86 18%, #6b6a67 33%);
+                    background-size: 200% 100%;
+                    border-radius: 1rem;
+                    animation: 1.5s shine linear infinite;
+                }
+
+@keyframes shine {
+                    to {
+                      background-position-x: -200%;
+                    }
+                  }
+
+.skeleton-description{
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skeleton-profile-name{
+    height: 1rem;
+    width: 7.5rem;
+}
+
+.skeleton-nick{
+    height: 1rem;
+    width: 3rem;
+}
+
 @media(max-width: 414px){
     .main-profile{
         width: 100% !important;
@@ -95,5 +128,5 @@ body{
 
     .formations-ads{
         top: 1rem !important;
-    }
+    } 
 }
